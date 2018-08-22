@@ -6,4 +6,8 @@
     <select id="user" resultType="com.hdsx.springboot.entity.User">
       SELECT * FROM USER
     </select>
+
+    <select id="getUser" parameterType="string" resultType="com.hdsx.springboot.entity.User">
+        SELECT * FROM USER WHERE ID = #{id}
+    </select>
 </mapper>
